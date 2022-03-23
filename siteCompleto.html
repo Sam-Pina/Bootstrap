@@ -35,19 +35,25 @@
         }
 
         .tamanho {
-            height: 950px;
+            height: 90vh;
         }
 
         .imagem {
             height: 950px;
             width: 100vw;
         }
+        .video {
+            width: 100%;
+            aspect-ratio: 2/1;        
+            padding: 0;
+        }
     </style>
 </head>
 
 <body>
+    <div class="container p-0 m-0">
     <!-- Menu -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-roxo">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-roxo vw-100">
         <a class="navbar-brand" href="#">CANADA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +88,8 @@
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-    </nav>
+    </nav> 
+</div>
     <!-- Menu -->
 
     <!--Carousel-->
@@ -140,84 +147,89 @@
     </div>
     <!--/Jumbotron-->
 
-    <div class="container">
-        <!--Cards-->
-        <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://images.wallpaperscraft.com/image/single/toronto_canada_coast_skyscrapers_architecture_59032_1280x720.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Toronto</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+    <div class="container-fluid p-0">
+        <div class="container">
+            <!--Cards-->
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
+                <div class="col ">
+                    <div class="card h-100">
+                        <img src="https://images.wallpaperscraft.com/image/single/toronto_canada_coast_skyscrapers_architecture_59032_1280x720.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Toronto</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_L3w29VTQTnGCxiGvwvrAfUghlMTNTnfxiyObghRLHcUY3a9_2ZB960HUbpnBmE_Lts&usqp=CAU"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Montreal</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://terryferreira.ca/wp-content/uploads/2021/10/terry-capa-materia-quebec.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Quebec</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_L3w29VTQTnGCxiGvwvrAfUghlMTNTnfxiyObghRLHcUY3a9_2ZB960HUbpnBmE_Lts&usqp=CAU"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Montreal</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://terryferreira.ca/wp-content/uploads/2021/10/terry-capa-materia-quebec.png"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Quebec</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to show that equal
-                            height action.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
         <!--/Cards-->
         
         <!--Texto e video-->
 
-        <div class="row mt-5 mb-5" id="sobre">
-            <div class="col-md-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ArR-ctuKraE"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-fluid p-0">
+            <div class="row mt-5 mb-5" id="sobre">
+                <div class="col-md-6">
+                    <iframe class="video" src="https://www.youtube.com/embed/ArR-ctuKraE"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+    
+                <div class="col-md-6 ">
+                    <h3 class="text-center">Segundo maior pais do mundo</h3>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, illum sint. Distinctio rem
+                        animi, cumque ea quos placeat recusandae tenetur similique minima.
+                        Non, nam at aperiam nisi quisquam beatae asperiores!</P>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, illum sint. Distinctio rem
+                        animi, cumque ea quos placeat recusandae tenetur similique minima.
+                        Non, nam at aperiam nisi quisquam beatae asperiores!</P>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, illum sint. Distinctio rem
+                        animi, cumque ea quos placeat recusandae tenetur similique minima.
+                        Non, nam at aperiam nisi quisquam beatae asperiores!</P>
+    
+                </div>
+                <!--/Texto e video-->
             </div>
-
-            <div class="col-md-6 ">
-                <h3 class="text-center">Segundo maior pais do mundo</h3>
-                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, illum sint. Distinctio rem
-                    animi, cumque ea quos placeat recusandae tenetur similique minima.
-                    Non, nam at aperiam nisi quisquam beatae asperiores!</P>
-                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, illum sint. Distinctio rem
-                    animi, cumque ea quos placeat recusandae tenetur similique minima.
-                    Non, nam at aperiam nisi quisquam beatae asperiores!</P>
-                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, illum sint. Distinctio rem
-                    animi, cumque ea quos placeat recusandae tenetur similique minima.
-                    Non, nam at aperiam nisi quisquam beatae asperiores!</P>
-
-            </div>
-            <!--/Texto e video-->
         </div>
 
         <!--Formulario de contato-->
 
 
-        <h4 class="text-center"> Entre em contato</h4>
+        <div class="container-fluid ">
+            <h4 class="text-center"> Entre em contato</h4>
         <div class="row">
             <div class="col-md-6">
                 <iframe
@@ -227,12 +239,12 @@
 
 
             <div class="col-md-6">
-                <form class="needs-validation" novalidate>
+                <form class="was-validated" >
                     <div class="">
                         <div class="w-100">
                             <div class="form-floating">
                                 <label for="floatingInputGrid">Email</label>
-                                <input type="email" class="form-control" id="floatingInputGrid"
+                                <input type="email" class="form-control is-invalid" aria-describedby="validatedInputGroupPrepend" required id="floatingInputGrid"
                                     placeholder="name@example.com" value="mdo@example.com">
 
                             </div>
@@ -241,7 +253,7 @@
                     </div>
                     <div class="form-floating my-2">
                         <label for="floatingTextarea2">Comments</label>
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        <textarea class="form-control is-invalid" aria-describedby="validatedInputGroupPrepend" required placeholder="Leave a comment here" id="floatingTextarea2"
                             style="height: 100px"></textarea>
                     </div>
 
@@ -271,18 +283,14 @@
                 </form>
             </div>
         </div>
+        </div>
 
 
         <!--/Formulario de contato-->
 
-        <!--Validação-->
-
-
-        <!--/Validação-->
-
         <!--Rodapé-->
         <hr>
-        <footer>
+        <footer class="container-fluid ">
             <div class="row mb-3">
                 <div class="col-md-12 d-flex justify-content-center">
 
